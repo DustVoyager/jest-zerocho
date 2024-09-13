@@ -1,0 +1,13 @@
+# Node.js 관련 파일 무시
+node_modules/
+
+# 빌드 파일 무시
+dist/
+build/
+
+# 환경 변수 파일 무시
+.env
+
+# 운영체제 관련 파일 무시
+.DS_Store
+Thumbs.db
