@@ -95,6 +95,8 @@ test("obj.minus에 스파이를 심고 리턴값이 서로 다르게 나오게(m
   expect(result3).toBe(8);
 });
 
+test.todo("나중에 맨들어야지..");
+
 // 모든 테스트 실행 전에
 beforeAll(() => {
   console.log("이 파일에 준비사항 실행 - database 연결");
