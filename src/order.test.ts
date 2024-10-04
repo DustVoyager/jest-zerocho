@@ -43,3 +43,20 @@ test("first -> second -> third 2 - jest extended", () => {
   // );
   expect(spy3).toHaveBeenCalledAfter(spy2);
 });
+
+test("인수의 일부 테스트", () => {
+  const fn = jest.fn();
+
+  fn({
+    a: {
+      b: {
+        c: "hello",
+      },
+      d: "bye",
+    },
+    e: ["f"],
+  });
+
+  console.log(fn.mock.calls);
+  expect(fn.mock.calls[0][0].a.b.c).toBe("hello");
+});
