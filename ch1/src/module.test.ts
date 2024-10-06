@@ -4,5 +4,6 @@ import { obj } from "./module";
 jest.mock("./module");
 
 test("module test", () => {
+  jest.replaceProperty(obj, "prop", "replaced");
   console.log(obj);
 });
